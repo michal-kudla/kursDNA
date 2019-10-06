@@ -1,0 +1,32 @@
+@startuml(id=SystemContext)
+scale max 2000x1409
+title FastCorner - System Context
+caption FastCorner   C1 diagram.
+
+skinparam {
+  shadowing false
+  arrowColor #707070
+  actorBorderColor #707070
+  componentBorderColor #707070
+  rectangleBorderColor #707070
+  noteBackgroundColor #ffffff
+  noteBorderColor #707070
+}
+actor "ConsumerUser" <<Person>> as 2 #08427b
+note right of 2
+  A consumer User consuming
+  processed data.
+end note
+rectangle 3 <<Software System>> #1168bd [
+  FastCorner
+  --
+  FastCorner Software System.
+]
+actor "MobileUser" <<Person>> as 1 #08427b
+note right of 1
+  A mobile User emitting
+  geo-locations.
+end note
+2 .[#707070].> 3 : Uses processed data
+1 .[#707070].> 3 : Emit GeoLocations
+@enduml
