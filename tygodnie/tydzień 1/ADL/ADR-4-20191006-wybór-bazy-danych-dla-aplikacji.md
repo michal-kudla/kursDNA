@@ -1,6 +1,6 @@
 # Wybór biblioteki do testów
 
-Jaki framework, technologię użyjemy do aplikacji w projekcie?
+Jaką bazę danych użyjemy do aplikacji. Dane związane z kontami użytkowników, wyliczonymi okrążeniami
 
 ## Status
 
@@ -8,7 +8,7 @@ zaakceptowana
 
 ## Decyzja
 
-Wybieramy JavaEE/Jakarta w najnowszej wersji
+Wybieramy PostgreSQL
 
 ## Czas podjęcia decyzji
 
@@ -16,12 +16,8 @@ Wybieramy JavaEE/Jakarta w najnowszej wersji
 
 ## Konsekwencje
 
-### Mniejsze API i komplementrne pokrywające całościowo wymogi projektu
-
-### Odświeżenie wiedzy o JavaEE
+### Uniwersalna baza danych używana wielokrotnie w poprzednich projektach
 
 ## Inne opcje
 
-### Spring Boot - technologia rozbudowana generująca ogromne wymagania pamięciowe
-
-### Kontener Serwletów - zbyt ubogie API jak na dzisiejsze wymagania
+### MySQL/MariaDB - na równi z PostgreSQLem ale mniej używana wcześniej
